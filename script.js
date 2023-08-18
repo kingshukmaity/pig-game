@@ -51,7 +51,7 @@ btnRoll.addEventListener('click', function () {
     const dice = Math.trunc(Math.random() * 6) + 1;
     //display dice
     diceEl.classList.remove('hidden');
-    diceEl.src = `dice-${dice}.png`;
+    diceEl.src = `images/dice-${dice}.png`;
     //check is it 1 or not
     if (dice !== 1) {
       // add  dice to current number
@@ -73,7 +73,7 @@ btnHold.addEventListener('click', function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       score[activePlayer];
     //check score atlest 100 or not
-    if (score[activePlayer] >=20) {
+    if (score[activePlayer] >=100) {
       playing = false;
       diceEl.classList.add('hidden');
 
